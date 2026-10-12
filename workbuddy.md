@@ -262,10 +262,19 @@ Token 到手后立刻做真实 MCP 端到端实测。**结果推翻了大量基�
 
 ---
 
-## 待完成事项
+##交付与发布状态
 
-- [ ] GitHub 公开仓库创建与推送（账号 bgx520）
-- [ ] 官方活动仓库提交报名 Issue
+**仓库地址**：https://github.com/bgx520/mcd-menu-detective （公开仓库，默认分支 main）
+
+- [x] GitHub 公开仓库创建与推送（账号 bgx520）—— 14 个文件已推送，远程 blob SHA 与本地逐一校验一致
+- [ ] 官方活动仓库提交报名 Issue —— Issue 正文已备好，待提交
+
+**发布凭据要点**：
+
+- 认证走 SSH 密钥（ed25519），非 PAT。本机`github.com` 网页域超时、`api.github.com` 与 SSH 443 端口可达，故选 SSH 推送
+- SSH 协议只能推送到已存在的仓库，**不能创建仓库**——建仓必须走网页或 API
+- 分支名曾为 master，远程默认分支是 main，推送前已`git branch -m master main` 对齐
+- Token 零落盘：本地暂存区与远程 raw 内容各扫描一轮，7 类凭据模式 0 命中
 
 ---
 
