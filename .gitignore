@@ -16,3 +16,4 @@ tests/probe/
 .vscode/
 .idea/
 .DS_Store
+workbuddy.md.bak_*
