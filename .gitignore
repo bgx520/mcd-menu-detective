@@ -1,0 +1,18 @@
+# Token 与本地配置（严禁提交）
+.env
+*.token
+token.txt
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# 探测产物（含真实门店/账号数据）
+tests/probe/
+*.tmp
+
+# 编辑器
+.vscode/
+.idea/
+.DS_Store
